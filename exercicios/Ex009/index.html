@@ -5,38 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        mark{
-            background-color: brown;
-        }
-    </style>
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1><mark>Outras Formatações</mark></h1>
+    <h1>Trabalhando com Listas</h1>
     <hr>
-    <h2>Código Fonte</h2>
-    <p>O comando d<code>ocument.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
-    <pre>
-        <code>
-    num = int(input('Digite um número'))
-    if num % 2 == 0:
-    print(f'O número {num} é PAR')
-    else:
-    print(f'O número {num} é ÍMPAR')
-    print('Fim do programa')
-        </code>
-    </pre>
-    <h2>Citações Simples</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações Completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
-    <blockquote cite="link do site anunciador dos direitos autorais.">
-        A diferença entre elementos inline e um bloco de texto é importante.
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto Invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <h2>Listas Ordenadas</h2>
+     <ol type="1" start="6"> <!--1 A a I i-->
+         <li>Acordar
+         <li>Ligar para o João
+         <li>Tomar café
+         <li>Escovar os dentes
+         <li>Ir para a faculdade
+         <li>Almoçar
+         <li>Ir para o trabalho
+         <li>Ir pra casa
+         <li>Jantar
+         <li>Dormir
+     </ol>
+     <h2>Lista não Ordenadas</h2>
+     <ul type="square"> <!--disc circle square-->
+         <li>Pão
+         <li>Tomata
+         <li>Feijão
+         <li>Biscoito
+     </ul>
+     <h2>Minhas Linguagens Favoritas</h2>
+     <ol>
+         <li>Antigas</li>
+         <ol type="a">
+            <li>Clipper</li> 
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+         </ol>
+         <li>Novas</li>
+         <ol type="a" start="5">
+             <li>PHP</li>
+             <li>Python</li>
+             <li>JavaScript</li>
+             <li>Kotlin</li>
+         </ol>
+
+     </ol>
+     <h2>Meus Jogos Favoritos</h2>
+     <ol>
+         <li>NES</li>
+         <ul type="square">
+             <li>Mario Bros</li>
+             <ul tye="circle">
+                 <li>Mario Bros 3</li>
+                 <li>Mario: Lost Levels</li>
+             </ul>
+             <li>Ninja Gainden</li>
+         </ul> 
+         <li>SNES</li>
+         <ul type="square">
+            <li>Mario</li>
+            <li>Donke Kong</li>
+         </ul>
+         <li>Playstation</li>
+         <ul type="square">
+             <li>Final Fantasy</li>
+             <li>Castlevania</li>
+         </ul>
+     </ol>
+     <h2>Lista de Definições</h2>
+     <dl>
+         <dt>HTML</dt>
+         <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+         <dt>CSS</dt>
+         <dd>Linguagem de marcação para a criação do design de um site.</dd>
+         <dt>JavaScript</dt>
+         <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+     </dl>
 </body>
 </html>
